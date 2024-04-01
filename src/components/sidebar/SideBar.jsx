@@ -60,7 +60,11 @@ const MyProSidebar = () => {
         zIndex: 10000,
       }}
     >
-      <Sidebar breakPoint="md" backgroundColor={"rgba(33, 33, 33, 0.563)"}>
+      <Sidebar
+        breakPoint="md"
+        backgroundColor={"rgba(33, 33, 33, 0.563)"}
+        style={{ border: "none" }}
+      >
         <Menu iconshape="square">
           <MenuItem
             icon={
