@@ -6,7 +6,6 @@ import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import LineChart from "../../components/line-chart/LineChart";
-import PriceCard from "../../components/price-card/PriceCard";
 import BitcoinPriceCards from "../../components/bitcoin-price-cards/BitcoinPriceCards";
 const Dashboard = () => {
   const theme = useTheme();
