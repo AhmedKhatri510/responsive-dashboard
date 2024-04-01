@@ -10,4 +10,4 @@ run the above command to run the server locally
 
 ## Live Link
 
-[Deployed Project](mahttps://main--curious-starship-3b510e.netlify.app/)
+[Deployed Project](https://main--curious-starship-3b510e.netlify.app/)
