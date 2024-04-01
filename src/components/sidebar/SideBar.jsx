@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Menu, Sidebar, MenuItem } from "react-pro-sidebar";
 import { useProSidebar } from "react-pro-sidebar";
 
-import { Link } from "react-router-dom";
 import {
   useTheme,
   Box,
@@ -38,7 +37,6 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
       }}
       onClick={() => setSelected(title)}
       icon={icon}
-      routerLink={<Link to={to} />}
     >
       <Typography>{title}</Typography>
     </MenuItem>
@@ -189,7 +187,6 @@ const MyProSidebar = () => {
                 }}
                 onClick={() => setSelected("Notification")}
                 icon={<NotificationsNoneOutlinedIcon />}
-                routerLink={<Link to="/notification" />}
               >
                 <div
                   style={{

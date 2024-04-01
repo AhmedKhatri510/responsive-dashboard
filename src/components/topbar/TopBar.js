@@ -1,11 +1,16 @@
 import React from "react";
 import { useContext } from "react";
+
+// components
 import { ColorModeContext, tokens } from "../../theme";
 import { useTheme, Box, IconButton, Typography } from "@mui/material";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+
+// hooks
 import { useProSidebar } from "react-pro-sidebar";
+
 const Topbar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
@@ -33,9 +38,7 @@ const Topbar = () => {
           </Typography>
           <Typography fontSize="20px">
             Welcome to{" "}
-            <span style={{ color: colors.green["lightneon"] }}>
-              Spot trading !
-            </span>
+            <span style={{ color: colors.green["neon"] }}>Spot trading !</span>
           </Typography>
         </Box>
       </Box>
@@ -43,10 +46,7 @@ const Topbar = () => {
         <Box display="flex" gap="10px">
           <IconButton
             style={{
-              backgroundColor:
-                theme.palette.mode === "dark"
-                  ? colors.green["lightneon"]
-                  : colors.green["neon"],
+              backgroundColor: colors.green["neon"],
               width: "fit-content",
               height: "40px",
               borderRadius: "5px",

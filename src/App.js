@@ -2,6 +2,8 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { MyProSidebarProvider } from "./context/sidebar/sidebarContext";
 import { ColorModeContext, useMode } from "./theme";
 import Topbar from "./components/topbar/TopBar";
+import { Route, Router, Routes } from "react-router-dom";
+import Dashboard from "./page/dashboard/Dashboard";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -11,11 +13,12 @@ function App() {
         <CssBaseline />
         <MyProSidebarProvider>
           <div style={{ height: "100%", width: "100%" }}>
-            <main>
-              <Topbar />
-              {/* <Routes>
-                <Route path="/" element={<Dashboard />} />
-                <Route path="/team" element={<Team />} />
+            {/* <Router> */}
+            <Topbar />
+            <Dashboard />
+            {/* <Routes> */}
+            {/* <Route path="/" element={<Dashboard />} /> */}
+            {/* <Route path="/team" element={<Team />} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/invoices" element={<Invoices />} />
                 <Route path="/form" element={<Form />} />
@@ -24,9 +27,9 @@ function App() {
                 <Route path="/line" element={<Line />} />
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/calendar" element={<Calendar />} />
-                <Route path="/geography" element={<Geography />} />
-              </Routes> */}
-            </main>
+                <Route path="/geography" element={<Geography />} /> */}
+            {/* </Routes> */}
+            {/* </Router> */}
           </div>
         </MyProSidebarProvider>
       </ThemeProvider>
